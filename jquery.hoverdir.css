@@ -12,7 +12,7 @@
   background: #fff;
 	padding: 10px;
 	position: relative;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	/* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
 }
 .da-thumbs li:nth-child(3n){
   margin-right: 0;
@@ -25,7 +25,7 @@
     background: #fff;
     padding: 10px;
     position: relative;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
   }
   .da-thumbs li:nth-child(3n){
     margin-right: 0;
@@ -35,7 +35,10 @@
 .da-thumbs li a img {
   width: 100%;
 	display: block;
-	position: relative;
+  position: relative;
+}
+.da-thumbs li a{
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 .da-thumbs li a {
 	overflow: hidden;
@@ -63,11 +66,11 @@
 	color: rgba(255,255,255,0.9);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	border-bottom: 1px solid rgba(255,255,255,0.5);
-	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+	/* box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3); */
 }
 .da-thumbs li a div.custom-hover-object span {
 	color: rgba(75,75,75,0.9);
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
 	border-bottom: 1px solid rgba(0,0,0,0.5);
-	box-shadow: 0 1px 0 rgba(255,255,255,255.1), 0 -10px 0 rgba(0,0,0,0.3);
+	/* box-shadow: 0 1px 0 rgba(255,255,255,255.1), 0 -10px 0 rgba(0,0,0,0.3); */
 }
