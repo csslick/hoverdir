@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>제이쿼리 목록 호버 방향 효과</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <link rel="stylesheet" href="">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <!-- 호버 방향 효과 플러그인 -->
+  <link rel="stylesheet" href="./jquery.hoverdir.css">
+  <script src="./jquery.hoverdir.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h2 style="font-size: 32px;text-align: center;margin: 1em;">방향 호버 효과 + 팬시박스</h2>
+    <div class="container">
+      <ul id="da-thumbs" class="da-thumbs">
+        <li>
+          <a data-fancybox="gallery" href="http://placeimg.com/400/400/1">
+            <img src="http://placeimg.com/400/400/1" />
+            <div><span>내 작품 제목(팬시박스 열기)</span></div>
+          </a>
+        </li>
+        <li>
+          <a data-fancybox="gallery" href="http://placeimg.com/400/400/2">
+            <img src="http://placeimg.com/400/400/2" />
+            <div><span>내 작품 제목(팬시박스 열기)</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="https://cafe.naver.com/csslick">
+            <img src="http://placeimg.com/400/400/3" />
+            <div><span>내 작품 제목(작품 상세페이지 이동)</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://placeimg.com/400/400/4" />
+            <div><span>내 작품 제목</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://placeimg.com/400/400/5" />
+            <div><span>내 작품 제목</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://placeimg.com/400/400/6" />
+            <div><span>내 작품 제목</span></div>
+          </a>
+        </li>
+      </ul>
+    </div><!-- end container -->
+  </section>
+
+  <script type="text/javascript">
+    $(function () {
+      // 효과가 지정될 이미지 목록 요소명 지정
+      $('#da-thumbs > li').hoverdir();
+    });
+  </script>
+
+</body>
+
+</html>
